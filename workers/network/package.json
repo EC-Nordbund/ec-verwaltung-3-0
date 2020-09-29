@@ -1,5 +1,5 @@
 {
-  "name": "@ec-nordbund/storage",
+  "name": "@ec-nordbund/network",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",

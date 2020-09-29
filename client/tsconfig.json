@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "strict": true,
+    "target": "ES2015",
+    "lib": [
+      "DOM", "WebWorker", "WebWorker.ImportScripts"
+    ]
+  },
+  "include": [
+    "src/**/*", "shim.d.ts"
+  ]
+}

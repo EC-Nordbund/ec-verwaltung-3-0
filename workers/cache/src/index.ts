@@ -30,17 +30,7 @@ async function init(pwd: string) {
           async get(id: KEY) {
             return await encryptionInterface.decrypt((await db.get(name, id as any)).contents) as (T & dataExtension)
           },
-          async getAll() {
-            const data = await db.getAll(name)
-            return await Promise.all(data.map(({ contents }) => encryptionInterface.decrypt(contents))) as (T & dataExtension)[]
-          },
-          async add(data: T & dataExtension) {
-            return await db.add(name, {
-              secure_id: (data as any)[keyName],
-              contents: await encryptionInterface.encrypt(data)
-            })
-          },
-          async put(data: T & dataExtension) {
+          async set(data: T & dataExtension) {
             return await db.put(name, {
               secure_id: (data as any)[keyName],
               contents: await encryptionInterface.encrypt(data)
@@ -68,11 +58,8 @@ async function init(pwd: string) {
           get() {
             return store.get('STATIC')
           },
-          add(data: T[], version: string) {
-            return store.add({ ID: 'STATIC', version, list: data })
-          },
-          put(data: T[], version: string) {
-            return store.put({ ID: 'STATIC', version, list: data })
+          set(data: T[], version: string) {
+            return store.set({ ID: 'STATIC', version, list: data })
           },
           delete() {
             return store.clear()
@@ -123,3 +110,5 @@ _self.onmessage = async (msg) => {
 }
 
 export type DATA = ReturnType<typeof init> extends Promise<infer U> ? U : null
+
+console.log('cache worker running')

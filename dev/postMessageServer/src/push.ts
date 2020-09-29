@@ -1,4 +1,4 @@
-import { setVapidDetails, sendNotification } from 'web-push'
+import { setVapidDetails, sendNotification } from './web-push'
 // @ts-expect-error
 import * as config from '../config.json'
 

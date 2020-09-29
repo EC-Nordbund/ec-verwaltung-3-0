@@ -1,5 +1,5 @@
 // @ts-expect-error
-import StorageWorker from "@ec-nordbund/storage?worker";
+import StorageWorker from "@ec-nordbund/cache?worker";
 import { wrap } from "comlink";
 import { DATA } from "./index";
 

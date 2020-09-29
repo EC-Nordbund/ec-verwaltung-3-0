@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "moduleResolution": "node",
     "declarationDir": "./dist",
-    "moduleResolution": "Node",
     "module": "ESNext",
     "outDir": "./dist",
     "strict": true,
-    "target": "ES2015",
-    "lib": [
-      "DOM"
-    ]
+    "target": "ESNext",
+    "lib": ["DOM", "WebWorker", "WebWorker.ImportScripts"]
   },
   "include": [
     "src/**/*"
