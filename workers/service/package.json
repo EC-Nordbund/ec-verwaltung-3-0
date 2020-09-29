@@ -20,7 +20,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "aes-crypro-wrapper": "^0.1.0",
+    "aes-crypro-wrapper": "^0.2.0",
     "comlink": "^4.3.0",
     "idb": "^5.0.6",
     "tslib": "^2.0.1"
