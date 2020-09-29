@@ -1,0 +1,16 @@
+cd workers
+cd cache
+yarn build
+cd ..
+cd network
+yarn build
+cd ..
+cd service
+yarn build
+cd ..
+cd shared
+cd encryption
+yarn build
+cd ..
+cd client
+yarn build

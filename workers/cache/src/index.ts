@@ -1,5 +1,5 @@
 import { IDBPDatabase, openDB } from "idb";
-import { jsonEncryptionInterface, generateKey } from "aes-crypro-wrapper";
+import { jsonEncryptionInterface, generateKey } from "@ec-nordbund/aes-encryption";
 import { expose } from "comlink";
 import { IPerson, IPerson_base, IAnmeldung, IAnmeldung_base } from "@ec-nordbund/types";
 

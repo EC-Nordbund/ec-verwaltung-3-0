@@ -1,0 +1,10 @@
+{
+  "title": "EC-Verwaltung",
+  "url": "",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "EC-Nordbund/verwaltung",
+  "twitter": ""
+}
