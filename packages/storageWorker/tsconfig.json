@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "moduleResolution": "node",
+    "declarationDir": "./dist",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "strict": true,
+    "target": "ESNext",
+    "lib": ["DOM", "WebWorker", "WebWorker.ImportScripts"]
+  },
+  "include": [
+    "src/**/*"
+  ],
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "strict": true,
+    "importHelpers": true,
+    "target": "ES2019",
+    "lib": ["DOM", "WebWorker", "WebWorker.ImportScripts"]
+  },
+  "include": [
+    "src/**/*"
+  ],
+}
